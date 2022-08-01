@@ -2,10 +2,11 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "description": "Node.js boilerplate package",
-  "main": "index.js",
+  "main": "brain-games.js",
   "scripts": {
     "test": "test"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Anitnelav01/frontend-project-lvl1.git"
@@ -18,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Anitnelav01/frontend-project-lvl1/issues"
   },
-  "homepage": "https://github.com/Anitnelav01/frontend-project-lvl1#readme"
+  "homepage": "https://github.com/Anitnelav01/frontend-project-lvl1#readme",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  }
 }
