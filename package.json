@@ -1,0 +1,22 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "Node.js boilerplate package",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anitnelav01/frontend-project-lvl1.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "Valentina Gorshkova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anitnelav01/frontend-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/Anitnelav01/frontend-project-lvl1#readme"
+}
