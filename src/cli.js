@@ -1,8 +1,11 @@
+import readlineSync from 'readline-sync';
 
-let readlineSync = require('readline-sync');
+const question = () => {
+  let userName = readlineSync.question('May I have your name? ');
+  return userName;
+};
 
-let userName = readlineSync.question('May I have your name? ');
+export default question;
 
-export default userName;
 
 
