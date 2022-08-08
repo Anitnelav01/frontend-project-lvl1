@@ -2,7 +2,20 @@
 
 import question from '../src/cli.js';
 
-console.log('Welcome to the Brain Games!');
-const result = question();
+const greetings = 'Welcome to the Brain Games!';
 
-console.log(`Hello, ${result} !`);
+console.log(greetings);
+
+const name = question();
+
+const greetingByName = `Hello, ${name} !`
+
+console.log(greetingByName);
+
+
+export { name, greetingByName, greetings };
+
+
+
+
+
