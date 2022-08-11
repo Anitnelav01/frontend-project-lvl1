@@ -2,7 +2,6 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "description": "Node.js boilerplate package",
-  "main": "brain-games.js",
   "scripts": {
     "test": "test"
   },
@@ -25,7 +24,8 @@
     "brain-even": "games/brain-even.js",
     "brain-calc": "games/brain-calc.js",
     "brain-gcd": "games/brain-gcd.js",
-    "brain-progression": "games/brain-progression.js"
+    "brain-progression": "games/brain-progression.js",
+    "brain-prime": "brain-prime.js"
   },
   "dependencies": {
     "eslint-plugin-jest": "^26.7.0",
