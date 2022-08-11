@@ -4,22 +4,22 @@ import runGame, { getRandomNumber } from '../index.js';
 
 const description = 'Find the greatest common divisor of given numbers';
 
-const getGreatestCommonDivisor = (oneItem, twoItem) => {
-  if (oneItem === 0 || twoItem === 0) {
-    return oneItem + twoItem;
+const getGreatestCommonDivisor = (firstItem, secondItem) => {
+  if (firstItem === 0 || secondItem === 0) {
+    return firstItem + secondItem;
   }
-  if (oneItem > twoItem) {
-    return getGreatestCommonDivisor(oneItem - twoItem, twoItem);
+  if (firstItem > secondItem) {
+    return getGreatestCommonDivisor(firstItem - secondItem, secondItem);
   }
-  return getGreatestCommonDivisor(oneItem, twoItem - oneItem);
+  return getGreatestCommonDivisor(firstItem, secondItem - firstItem);
 };
 
 const getQuestionAndAnswer = () => {
-  const oneNumber = getRandomNumber();
-  const twoNubmer = getRandomNumber();
+  const firstNumber = getRandomNumber(1, 50);
+  const secondNubmer = getRandomNumber(1, 50);
 
-  const question = `${oneNumber} ${twoNubmer}`;
-  const correctAnswer = String(getGreatestCommonDivisor(oneNumber, twoNubmer));
+  const question = `${firstNumber} ${secondNubmer}`;
+  const correctAnswer = String(getGreatestCommonDivisor(firstNumber, secondNubmer));
 
   return [question, correctAnswer];
 };
