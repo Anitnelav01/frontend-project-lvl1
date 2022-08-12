@@ -16,24 +16,24 @@ $ brain-even
 
 <h2>Игра: "Калькулятор"</h2> 
 
-Пример - https://asciinema.org/a/eacVarAGP0BIpUbXdrszHx8e9
+Пример - https://asciinema.org/a/eacVarAGP0BIpUbXdrszHx8e9 \n
 Запуск игры
 $ brain-calc
 
-<h2>Игра "НОД">/h2>
+<h2>Игра "НОД"</h2>
 
-Пример - https://asciinema.org/a/7FIImbdWXiiuI792H5DCfUcQm
+Пример - https://asciinema.org/a/7FIImbdWXiiuI792H5DCfUcQm \n
 Запуск игры
 $ brain-gcd
 
 <h2>Игра "Арифметическая прогрессия"</h2> 
 
-Пример - https://asciinema.org/a/786k1bpntAZ2pDIXFRDH8RXyA
+Пример - https://asciinema.org/a/786k1bpntAZ2pDIXFRDH8RXyA \n
 Запуск игры
 $ brain-progression
 
 <h2>Игра "Простое ли число?"</h2>
 
-Пример - https://asciinema.org/a/GvDsXAScriZA14QSZ9g02gPkW
-Запуск игры
+Пример - https://asciinema.org/a/GvDsXAScriZA14QSZ9g02gPkW \n
+Запуск игры 
 $ brain-prime
