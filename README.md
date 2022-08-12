@@ -8,32 +8,32 @@
 <h2>Установка</h2>
 $ sudo npm link 
 
-Игра: "Проверка на чётность" 
-Пример - https://asciinema.org/a/0NSDNB75DmQUjqI9G6hkLV0e1
+<h2>Игра: "Проверка на чётность"</h2>
 
-<h2>Запуск игры</h2>
+Пример - https://asciinema.org/a/0NSDNB75DmQUjqI9G6hkLV0e1
+Запуск игры
 $ brain-even 
 
-Игра: "Калькулятор" 
-Пример - https://asciinema.org/a/eacVarAGP0BIpUbXdrszHx8e9
+<h2>Игра: "Калькулятор"</h2> 
 
-<h2>Запуск игры</h2>
+Пример - https://asciinema.org/a/eacVarAGP0BIpUbXdrszHx8e9
+Запуск игры
 $ brain-calc
 
-Игра "НОД" 
-Пример - https://asciinema.org/a/7FIImbdWXiiuI792H5DCfUcQm
+<h2>Игра "НОД">/h2>
 
-<h2>Запуск игры</h2>
+Пример - https://asciinema.org/a/7FIImbdWXiiuI792H5DCfUcQm
+Запуск игры
 $ brain-gcd
 
-Игра "Арифметическая прогрессия" 
-Пример - https://asciinema.org/a/786k1bpntAZ2pDIXFRDH8RXyA
+<h2>Игра "Арифметическая прогрессия"</h2> 
 
-<h2>Запуск игры</h2>
+Пример - https://asciinema.org/a/786k1bpntAZ2pDIXFRDH8RXyA
+Запуск игры
 $ brain-progression
 
-Игра "Простое ли число?" 
-Пример - https://asciinema.org/a/GvDsXAScriZA14QSZ9g02gPkW
+<h2>Игра "Простое ли число?"</h2>
 
-<h2>Запуск игры</h2>
+Пример - https://asciinema.org/a/GvDsXAScriZA14QSZ9g02gPkW
+Запуск игры
 $ brain-prime
