@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import runGame, { getRandomNumber } from '../index.js';
 
 const description = 'What is the result of the expression?';
@@ -32,4 +30,6 @@ const getQuestionAndAnswer = () => {
   return [question, correctAnswer];
 };
 
-runGame(description, getQuestionAndAnswer);
+export default () => {
+  runGame(description, getQuestionAndAnswer);
+};

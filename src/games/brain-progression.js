@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import runGame, { getRandomNumber } from '../index.js';
 
 const description = 'What number is missing in the progression?';
@@ -28,4 +26,6 @@ const getQuestionAndAnswer = () => {
   return [question, correctAnswer];
 };
 
-runGame(description, getQuestionAndAnswer);
+export default () => {
+  runGame(description, getQuestionAndAnswer);
+};
