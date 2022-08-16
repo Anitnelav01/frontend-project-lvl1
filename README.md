@@ -3,37 +3,66 @@
 [![Actions Status](https://github.com/Anitnelav01/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Anitnelav01/frontend-project-lvl1/actions)
 <a href="https://codeclimate.com/github/Anitnelav01/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/7de909f129ffee502609/maintainability" /></a>
 
-Проект <h1>Игры разума (JavaScript)</h1>
+### Проект Игры разума (JavaScript)
 
-<h2>Установка</h2>
-$ sudo npm link 
+### Установка
 
-<h2>Игра: "Проверка на чётность"</h2>
+```
+$ npm link 
+```
 
-Пример - https://asciinema.org/a/0NSDNB75DmQUjqI9G6hkLV0e1
-<h3>Запуск игры</h3>
-$ brain-even 
+### Установить зависимость
 
-<h2>Игра: "Калькулятор"</h2> 
+```
+$ npm ci
+```
 
-Пример - https://asciinema.org/a/eacVarAGP0BIpUbXdrszHx8e9 
-<h3>Запуск игры</h3>
-$ brain-calc
+### Игра: "Проверка на чётность"
 
-<h2>Игра "НОД"</h2>
+[![asciicast](https://asciinema.org/a/l40Lrk3midkLmNEOmgZErGnY7.svg)](https://asciinema.org/a/0NSDNB75DmQUjqI9G6hkLV0e1)
 
-Пример - https://asciinema.org/a/7FIImbdWXiiuI792H5DCfUcQm 
-<h3>Запуск игры</h3>
-$ brain-gcd
+### Запуск игры
 
-<h2>Игра "Арифметическая прогрессия"</h2> 
+```
+$ brain-even  
+```
 
-Пример - https://asciinema.org/a/786k1bpntAZ2pDIXFRDH8RXyA 
-<h3>Запуск игры</h3>
+### Игра: "Калькулятор"
+
+[![asciicast](https://asciinema.org/a/l40Lrk3midkLmNEOmgZErGnY7.svg)](https://asciinema.org/a/eacVarAGP0BIpUbXdrszHx8e9)
+
+### Запуск игры
+
+```
+$ brain-calc  
+```
+
+### Игра "НОД"
+
+[![asciicast](https://asciinema.org/a/l40Lrk3midkLmNEOmgZErGnY7.svg)](https://asciinema.org/a/7FIImbdWXiiuI792H5DCfUcQm)
+
+### Запуск игры
+
+```
+$ brain-gcd 
+```
+
+### Игра "Арифметическая прогрессия"
+
+[![asciicast](https://asciinema.org/a/l40Lrk3midkLmNEOmgZErGnY7.svg)](https://asciinema.org/a/786k1bpntAZ2pDIXFRDH8RXyA)
+
+### Запуск игры
+
+```
 $ brain-progression
+```
 
-<h2>Игра "Простое ли число?"</h2>
+### Игра "Простое ли число?"
 
-Пример - https://asciinema.org/a/GvDsXAScriZA14QSZ9g02gPkW 
-<h3>Запуск игры</h3>
+[![asciicast](https://asciinema.org/a/l40Lrk3midkLmNEOmgZErGnY7.svg)](https://asciinema.org/a/GvDsXAScriZA14QSZ9g02gPkW)
+
+### Запуск игры
+
+```
 $ brain-prime
+```
