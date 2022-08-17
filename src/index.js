@@ -18,7 +18,7 @@ const runGame = (description, generateResponse) => {
       console.log(`'${playerAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${playerName}!`);
       return;
-    } 
+    }
     console.log('Correct!');
   }
   console.log(`Congratulations, ${playerName}!`);
