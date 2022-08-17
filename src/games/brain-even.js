@@ -1,14 +1,17 @@
-import runGame, { getRandomNumber, isEvenNumber } from '../index.js';
+import runGame from '../index.js';
+import { getRandomNumber } from '../utils.js';
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const getQuestionAndAnswer = () => {
+const parity = (number) => number % 2 === 0;
+
+const generateResponse = () => {
   const question = getRandomNumber(0, 20);
-  const correctAnswer = isEvenNumber(question) ? 'yes' : 'no';
+  const correctAnswer = parity(question) ? 'yes' : 'no';
 
   return [question, correctAnswer];
 };
 
 export default () => {
-  runGame(description, getQuestionAndAnswer);
+  runGame(description, generateResponse);
 };
