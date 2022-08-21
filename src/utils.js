@@ -1,4 +1,4 @@
-const getRandomNumber = (minRan, maxRan) =>{
+const getRandomNumber = (minRan, maxRan) => {
   return Math.floor(Math.random() * (maxRan - minRan) + minRan);
 };
 
