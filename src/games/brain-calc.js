@@ -10,9 +10,9 @@ const calculate = (operator, x, y) => {
   switch (operator) {
     case '+':
       return x + y;
-    case '-': 
+    case '-':
       return x - y;
-    case '*': 
+    case '*':
       return x * y;
     default:
       throw new Error('Unknown state!');
