@@ -1,5 +1,5 @@
 import run from '../index.js';
-import { getRandomNumber, index } from '../utils.js';
+import { getRandomNumber, getRundomIndex } from '../utils.js';
 
 const description = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
@@ -20,7 +20,7 @@ const calculate = (operator, x, y) => {
 };
 
 const generateTask = () => {
-  const symbol = operators[index(operators)];
+  const symbol = operators[getRundomIndex(operators)];
   const number1 = getRandomNumber(minRange, maxRange);
   const number2 = getRandomNumber(minRange, maxRange);
 
