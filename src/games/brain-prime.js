@@ -1,7 +1,9 @@
-import runGame from '../index.js';
+import run from '../index.js';
 import getRandomNumber from '../utils.js';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const minRange = 2;
+const maxRange = 100;
 
 const primeNumberCheck = (num) => {
   for (let i = 2; i * i <= num; i += 1) {
@@ -13,12 +15,14 @@ const primeNumberCheck = (num) => {
 };
 
 const generateResponse = () => {
-  const question = getRandomNumber(2, 100);
+  const question = getRandomNumber(minRange, maxRange);
   const correctAnswer = primeNumberCheck(question) ? 'yes' : 'no';
 
   return [question, correctAnswer];
 };
 
-export default () => {
-  runGame(description, generateResponse);
+const runPrime = () => {
+  run(description, generateResponse);
 };
+
+export default runPrime;

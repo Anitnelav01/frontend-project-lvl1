@@ -1,36 +1,36 @@
-import runGame from '../index.js';
-import getRandomNumber from '../utils.js';
+import run from '../index.js';
+import { getRandomNumber, index } from '../utils.js';
 
 const description = 'What is the result of the expression?';
+const operators = ['+', '-', '*'];
+const minRange = 0;
+const maxRange = 50;
 
-const randomOperator = ['+', '-', '*'];
-
-const getRandomOperator = (symbols) => {
-  const symbolsLength = symbols.length;
-  const randomIndex = Math.floor(Math.random() * (symbolsLength - 1 + 1));
-  const randomSymbol = symbols[randomIndex];
-  return randomSymbol;
-};
-
-const calc = (symbol, randomNumberOne, randomNumberOneTwo) => {
-  switch (symbol) {
-    case '+': return randomNumberOne + randomNumberOneTwo;
-    case '-': return randomNumberOne - randomNumberOneTwo;
-    case '*': return randomNumberOne * randomNumberOneTwo;
-    default: return null;
+const calculate = (operator, x, y) => {
+  switch (operator) {
+    case '+':
+      return x + y;
+    case '-': 
+      return x - y;
+    case '*': 
+      return x * y;
+    default:
+      throw new Error('Unknown state!');
   }
 };
 
-const generateResponse = () => {
-  const randomSymbol = getRandomOperator(randomOperator);
-  const randomNumberOne = getRandomNumber(0, 50);
-  const randomNumberTwo = getRandomNumber(0, 50);
+const generateTask = () => {
+  const symbol = operators[index(operators)];
+  const number1 = getRandomNumber(minRange, maxRange);
+  const number2 = getRandomNumber(minRange, maxRange);
 
-  const question = `${randomNumberOne} ${randomSymbol} ${randomNumberTwo}`;
-  const correctAnswer = String(calc(randomSymbol, randomNumberOne, randomNumberTwo));
+  const question = `${number1} ${symbol} ${number2}`;
+  const correctAnswer = String(calculate(symbol, number1, number2));
   return [question, correctAnswer];
 };
 
-export default () => {
-  runGame(description, generateResponse);
+const ranCalc = () => {
+  run(description, generateTask);
 };
+
+export default ranCalc;

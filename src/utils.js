@@ -1,6 +1,11 @@
-const getRandomNumber = (minRange, maxRange) => {
-  const randomNumber = Math.floor(Math.random() * (maxRange - minRange) + minRange);
-  return randomNumber;
+export default (minRan, maxRan) => {
+  return Math.floor(Math.random() * (maxRan - minRan) + minRan);
 };
 
-export default getRandomNumber;
+const index = (symbols) => {
+  const symbolsLength = symbols.length;
+  const index = Math.floor(Math.random() * (symbolsLength - 1 + 1));
+  return index;
+}
+
+export { index };

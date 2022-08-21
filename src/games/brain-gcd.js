@@ -1,7 +1,9 @@
-import runGame from '../index.js';
+import run from '../index.js';
 import getRandomNumber from '../utils.js';
 
 const description = 'Find the greatest common divisor of given numbers';
+const minRange = 1;
+const maxRange = 50;
 
 const getGreatestCommonDivisor = (firstItem, secondItem) => {
   if (firstItem === 0 || secondItem === 0) {
@@ -14,8 +16,8 @@ const getGreatestCommonDivisor = (firstItem, secondItem) => {
 };
 
 const generateResponse = () => {
-  const firstNumber = getRandomNumber(1, 50);
-  const secondNubmer = getRandomNumber(1, 50);
+  const firstNumber = getRandomNumber(minRange, maxRange);
+  const secondNubmer = getRandomNumber(minRange, maxRange);
 
   const question = `${firstNumber} ${secondNubmer}`;
   const correctAnswer = String(getGreatestCommonDivisor(firstNumber, secondNubmer));
@@ -23,6 +25,8 @@ const generateResponse = () => {
   return [question, correctAnswer];
 };
 
-export default () => {
-  runGame(description, generateResponse);
+const runGcd = () => {
+  run(description, generateResponse);
 };
+
+export default runGcd;
