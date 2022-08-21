@@ -1,6 +1,6 @@
-export default (minRan, maxRan) => {
+const getRandomNumber = (minRan, maxRan) => {
   return Math.floor(Math.random() * (maxRan - minRan) + minRan);
-};
+}
 
 const index = (symbols) => {
   const symbolsLength = symbols.length;
@@ -8,4 +8,4 @@ const index = (symbols) => {
   return index;
 }
 
-export { index };
+export { getRandomNumber, index };
