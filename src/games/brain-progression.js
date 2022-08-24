@@ -19,7 +19,7 @@ const createProgression = (start, step) => {
 };
 
 const generateResponse = () => {
-  const start = getRandomNumber(minRange, maxRange);
+  let start = getRandomNumber(minRange, maxRange);
   const step = getRandomNumber(minStep, maxStep);
   const progression = createProgression(start, step);
   const hiddenNumberIndex = getRandomIndex(progression);
