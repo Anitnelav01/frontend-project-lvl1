@@ -1,5 +1,5 @@
 import run from '../index.js';
-import { getRandomNumber, getRundomIndex } from '../utils.js';
+import { getRandomNumber, getRandomIndex } from '../utils.js';
 
 const description = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
@@ -19,18 +19,18 @@ const calculate = (operator, x, y) => {
   }
 };
 
-const generateTask = () => {
-  const symbol = operators[getRundomIndex(operators)];
+const generateRound = () => {
+  const sign = operators[getRandomIndex(operators)];
   const number1 = getRandomNumber(minRange, maxRange);
   const number2 = getRandomNumber(minRange, maxRange);
 
-  const question = `${number1} ${symbol} ${number2}`;
-  const correctAnswer = String(calculate(symbol, number1, number2));
+  const question = `${number1} ${sign} ${number2}`;
+  const correctAnswer = String(calculate(sign, number1, number2));
   return [question, correctAnswer];
 };
 
-const ranCalc = () => {
-  run(description, generateTask);
+const runCalc = () => {
+  run(description, generateRound);
 };
 
-export default ranCalc;
+export default runCalc;

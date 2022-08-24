@@ -1,9 +1,6 @@
-const getRandomNumber = (minRan, maxRan) => Math.floor(Math.random() * (maxRan - minRan) + minRan);
+const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min) + min);
 
-const getRundomIndex = (operatorArray) => {
-  const operatorLength = operatorArray.length;
-  const randomIndex = Math.floor(Math.random() * (operatorLength - 1 + 1));
-  return randomIndex;
-};
+const getRandomIndex = (data) => Math.floor(Math.random() * data.length);
 
-export { getRandomNumber, getRundomIndex };
+
+export { getRandomNumber, getRandomIndex };
