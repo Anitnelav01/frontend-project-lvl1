@@ -8,7 +8,7 @@ const maxRange = 50;
 const minStep = 2;
 const maxStep = 5;
 
-const createProgression = (start, step, length) => {
+const createProgression = (start =  0, step, length) => {
   const progression = [];
 
   for (let i = 0; i < length; i += 1) {
@@ -19,7 +19,7 @@ const createProgression = (start, step, length) => {
 };
 
 const generateResponse = () => {
-  let start = getRandomNumber(minRange, maxRange);
+  const start = getRandomNumber(minRange, maxRange);
   const step = getRandomNumber(minStep, maxStep);
   const progression = createProgression(start, step, limitLength);
   const hiddenNumberIndex = getRandomIndex(progression);
