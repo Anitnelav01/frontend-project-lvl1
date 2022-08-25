@@ -8,12 +8,11 @@ const maxRange = 50;
 const minStep = 2;
 const maxStep = 5;
 
-const createProgression = (start =  0, step, length) => {
+const createProgression = (start, step, length) => {
   const progression = [];
 
   for (let i = 0; i < length; i += 1) {
-    progression.push(start);
-    start += step;
+    progression.push(start + step * i);
   }
   return progression;
 };
