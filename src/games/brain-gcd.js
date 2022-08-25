@@ -7,7 +7,6 @@ const maxRange = 50;
 
 const getGcd = (x, y) => (y === 0 ? x : getGcd(y, x % y));
 
-
 const generateResponse = () => {
   const number1 = getRandomNumber(minRange, maxRange);
   const number2 = getRandomNumber(minRange, maxRange);
