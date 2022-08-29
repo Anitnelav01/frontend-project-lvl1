@@ -1,5 +1,4 @@
-const getRandomNumber = (min, max) => Math.floor(Math.random() * (Math.floor(max) - Math.ceil(min) + 1)) + Math.ceil(min);
-
+const getRandomNumber = (min, max) => Math.round(Math.random() * (max - min) + min);
 
 const getRandomIndex = (data) => Math.floor(Math.random() * data.length);
 
