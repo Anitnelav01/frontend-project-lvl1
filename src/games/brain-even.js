@@ -5,13 +5,13 @@ const description = 'Answer "yes" if the number is even, otherwise answer "no".'
 const minRange = 0;
 const maxRange = 20;
 
-const parity = (number) => number % 2 === 0;
+const isEven = (number) => number % 2 === 0;
 
 const generateResponse = () => {
-  const question = getRandomNumber(minRange, maxRange);
-  const correctAnswer = parity(question) ? 'yes' : 'no';
+  const number = getRandomNumber(minRange, maxRange);
+  const correctAnswer = isEven(number) ? 'yes' : 'no';
 
-  return [question, correctAnswer];
+  return [number, correctAnswer];
 };
 
 const runEven = () => {

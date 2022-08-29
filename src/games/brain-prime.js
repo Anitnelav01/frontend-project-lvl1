@@ -2,10 +2,14 @@ import run from '../index.js';
 import { getRandomNumber } from '../utils.js';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-const minRange = 2;
+const minRange = 0;
 const maxRange = 100;
 
-const isEven = (number) => {
+const isPrime = (number) => {
+  if (number < 2){
+    return false;
+  } 
+
   for (let i = 2; i * i <= number; i += 1) {
     if (number % i === 0) {
       return false;
@@ -15,10 +19,10 @@ const isEven = (number) => {
 };
 
 const generateResponse = () => {
-  const question = getRandomNumber(minRange, maxRange);
-  const correctAnswer = isEven(question) ? 'yes' : 'no';
+  const number = getRandomNumber(minRange, maxRange);
+  const correctAnswer = isPrime(number) ? 'yes' : 'no';
 
-  return [question, correctAnswer];
+  return [number, correctAnswer];
 };
 
 const runPrime = () => {

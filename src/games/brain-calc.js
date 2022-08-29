@@ -20,12 +20,12 @@ const calculate = (operator, x, y) => {
 };
 
 const generateRound = () => {
-  const sign = operators[getRandomIndex(operators)];
+  const operator = operators[getRandomIndex(operators)];
   const number1 = getRandomNumber(minRange, maxRange);
   const number2 = getRandomNumber(minRange, maxRange);
 
-  const question = `${number1} ${sign} ${number2}`;
-  const correctAnswer = String(calculate(sign, number1, number2));
+  const question = `${number1} ${operator} ${number2}`;
+  const correctAnswer = String(calculate(operator, number1, number2));
   return [question, correctAnswer];
 };
 
