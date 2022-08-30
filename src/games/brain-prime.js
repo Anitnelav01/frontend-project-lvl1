@@ -19,8 +19,9 @@ const isPrime = (number) => {
 };
 
 const generateResponse = () => {
-  const question = String(getRandomNumber(minRange, maxRange));
-  const correctAnswer = isPrime(question) ? 'yes' : 'no';
+  const number = getRandomNumber(minRange, maxRange);
+  const correctAnswer = isPrime(number) ? 'yes' : 'no';
+  const question = String(number);
 
   return [question, correctAnswer];
 };

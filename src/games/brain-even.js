@@ -8,8 +8,9 @@ const maxRange = 20;
 const isEven = (number) => number % 2 === 0;
 
 const generateResponse = () => {
-  const question = String(getRandomNumber(minRange, maxRange));
-  const correctAnswer = isEven(question) ? 'yes' : 'no';
+  const number = getRandomNumber(minRange, maxRange);
+  const correctAnswer = isEven(number) ? 'yes' : 'no';
+  const question = String(number);
 
   return [question, correctAnswer];
 };
