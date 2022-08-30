@@ -8,10 +8,10 @@ const maxRange = 20;
 const isEven = (number) => number % 2 === 0;
 
 const generateResponse = () => {
-  const number = getRandomNumber(minRange, maxRange);
-  const correctAnswer = isEven(number) ? 'yes' : 'no';
+  const question = String(getRandomNumber(minRange, maxRange));
+  const correctAnswer = isEven(question) ? 'yes' : 'no';
 
-  return [number, correctAnswer];
+  return [question, correctAnswer];
 };
 
 const runEven = () => {
